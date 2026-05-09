@@ -31,4 +31,4 @@ A imagem só é exibida ao clicar no nome do produto.
 🟠 Médio
 
 ## Evidência
->
+<img width="1308" height="501" alt="QA3" src="https://github.com/user-attachments/assets/df84b551-32a0-4a0e-b6d0-1e40f767f570" />
