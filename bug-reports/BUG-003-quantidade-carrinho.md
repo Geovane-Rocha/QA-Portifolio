@@ -1,4 +1,4 @@
-# Bug Report — BUG-002
+# Bug Report — BUG-003
 
 ## Título
 Campo de quantidade no carrinho não permite edição
