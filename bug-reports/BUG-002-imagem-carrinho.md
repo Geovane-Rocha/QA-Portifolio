@@ -1,6 +1,6 @@
 # Bug Report — BUG-002
 
-## Título
+## Título 
 Imagem do produto não aparece na página do carrinho
 
 ## Ambiente
