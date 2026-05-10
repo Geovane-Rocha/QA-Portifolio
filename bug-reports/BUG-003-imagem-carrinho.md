@@ -1,4 +1,4 @@
-# Bug Report — BUG-002
+# Bug Report — BUG-003
 
 ## Título
 Imagem do produto não aparece na página do carrinho
