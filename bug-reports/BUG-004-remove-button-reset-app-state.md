@@ -42,5 +42,5 @@ mas o botão "Remove" ainda aparece nos produtos.
 ## Evidência
 
 
-![evidencia-bug-004](https://github.com/user-attachments/assets/49a1b54b-3acf-478e-beda-7aa9567a1919)
+![evidencia-bug-004](https://github.com/user-attachments/assets/a17b2cd6-165a-4fcf-af51-3c3528b56d7b)
 
