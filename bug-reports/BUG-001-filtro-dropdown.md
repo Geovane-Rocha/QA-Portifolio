@@ -25,4 +25,5 @@ diretamente no texto 'Name (A to Z)', ignorando a área clicável do ícone.
 🟡 Baixo
 
 ## Evidência
-> Print a ser adicionado
+<img width="1313" height="614" alt="QA PNG" src="https://github.com/user-attachments/assets/1e02fb95-7da0-4408-899e-ddd40a7fcc47" />
+
