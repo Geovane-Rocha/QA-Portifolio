@@ -1,4 +1,4 @@
-# 📖 Glossário de QA
+# 📖 Glossário de QA     
 
 Termos e conceitos estudados durante minha jornada em QA.
 
