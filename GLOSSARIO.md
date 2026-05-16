@@ -43,3 +43,6 @@ básico do sistema está funcionando.
 
 **Test Plan** — Documento que organiza toda a
 estratégia de testes de um projeto.
+
+**Git** — Sistema de controle de versão que rastreia 
+alterações nos arquivos do projeto.
