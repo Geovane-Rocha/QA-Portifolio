@@ -34,4 +34,4 @@ Imagens quebradas prejudicam a experiência visual do usuário
 e passam impressão de site mal mantido.
 
 ## Evidência
-> Print a ser adicionado
+> <img width="1267" height="643" alt="QA#" src="https://github.com/user-attachments/assets/fde13ead-ab27-400c-a87c-e075ff53cb29" />
