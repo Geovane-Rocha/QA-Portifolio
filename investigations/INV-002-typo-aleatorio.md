@@ -33,3 +33,4 @@ contexto da página — às vezes o próprio sistema explica
 o comportamento.
 
 ## Evidência
+<img width="1127" height="415" alt="ggt" src="https://github.com/user-attachments/assets/65c5f0b8-32f3-40fd-8348-5139beaddd06" />
