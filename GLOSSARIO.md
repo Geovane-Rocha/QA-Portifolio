@@ -46,3 +46,29 @@ estratégia de testes de um projeto.
 
 **Git** — Sistema de controle de versão que rastreia 
 alterações nos arquivos do projeto.
+
+## A
+
+**API** (Application Programming Interface) — Interface de 
+comunicação entre sistemas. Permite que aplicações se 
+comuniquem entre si.
+
+## C
+
+**CRUD** — Conjunto das 4 operações básicas de uma API:
+Create (POST), Read (GET), Update (PUT), Delete (DELETE).
+
+## J
+
+**JSON** (JavaScript Object Notation) — Formato padrão 
+de resposta das APIs. Organiza dados em chave e valor.
+
+## M
+
+**Método HTTP** — Tipo de operação enviada para uma API.
+Principais: GET, POST, PUT, DELETE.
+
+## S
+
+**Status Code** — Código numérico que indica o resultado 
+de uma requisição. Ex: 200 OK, 201 Created, 404 Not Found.
