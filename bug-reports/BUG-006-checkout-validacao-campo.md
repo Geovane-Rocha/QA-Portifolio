@@ -42,3 +42,4 @@ Impacta tanto o usuário quanto o recptor - um dado errado
 pode dificultar localizar as informações do usuário e prejudicar a loja.
 
 ## Evidencia
+<img width="1170" height="527" alt="sauce" src="https://github.com/user-attachments/assets/2eade99d-bca5-43d4-82d8-b108c1eb032f" />
