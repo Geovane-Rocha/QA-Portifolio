@@ -32,10 +32,10 @@ O sistema aceita os dados inválidos efinaliza a campra
 perfeitamente sem nenhumavalidação.
 
 ## Severidade
-Alta
+🔴 Alta
 
 ## Prioridade
-Alta
+🔴 Alta
 
 ## Impcato
 Impacta tanto o usuário quanto o recptor - um dado errado
