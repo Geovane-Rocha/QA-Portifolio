@@ -49,3 +49,48 @@ def test_login_invalido():
     print("✅ Teste passou — Mensagem de erro exibida corretamente!")
     
     driver.quit()
+    
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+def test_adicionar_produto_carrinho():
+
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
+    try:
+        driver.get("https://www.saucedemo.com")
+
+        driver.find_element(By.ID, "user-name").send_keys("standard_user")
+        driver.find_element(By.ID, "password").send_keys("secret_sauce")
+        driver.find_element(By.ID, "login-button").click()
+
+        # Espera página carregar
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "inventory_container"))
+        )
+
+        # Adiciona produto
+        botao = driver.find_element(
+            By.CSS_SELECTOR,
+            "[data-test='add-to-cart-sauce-labs-backpack']"
+        )
+
+        botao.click()
+
+        # Espera carrinho aparecer
+        carrinho = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located(
+                (By.CSS_SELECTOR, "[data-test='shopping-cart-badge']")
+            )
+        )
+
+        assert carrinho.text == "1"
+
+        print("✅ Teste passou — Produto adicionado ao carrinho!")
+
+    finally:
+        driver.quit()
