@@ -142,3 +142,38 @@ def test_checkout_completo():
 
     finally:
         driver.quit()
+        
+def test_logout():
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    try:
+        # Login
+        driver.get("https://www.saucedemo.com")
+        driver.find_element(By.ID, "user-name").send_keys("standard_user")
+        driver.find_element(By.ID, "password").send_keys("secret_sauce")
+        driver.find_element(By.ID, "login-button").click()
+
+        # Espera página de produtos
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "inventory_container"))
+        )
+
+        # Abre o menu lateral
+        driver.find_element(By.ID, "react-burger-menu-btn").click()
+
+        # Espera o menu abrir e o botão estar clicável
+        logout = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, "logout_sidebar_link"))
+)
+
+        # Clica em Logout
+        logout.click()
+        # Verifica se voltou para a página de login
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "login-button"))
+        )
+
+        assert "saucedemo.com" in driver.current_url
+        print("✅ Teste passou — Logout realizado com sucesso!")
+
+    finally:
+        driver.quit()
