@@ -94,3 +94,51 @@ def test_adicionar_produto_carrinho():
 
     finally:
         driver.quit()
+        
+def test_checkout_completo():
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    try:
+        driver.get("https://www.saucedemo.com")
+        driver.find_element(By.ID, "user-name").send_keys("standard_user")
+        driver.find_element(By.ID, "password").send_keys("secret_sauce")
+        driver.find_element(By.ID, "login-button").click()
+
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "inventory_container"))
+        )
+
+        driver.find_element(By.CSS_SELECTOR, "[data-test='add-to-cart-sauce-labs-backpack']").click()
+
+        driver.find_element(By.CSS_SELECTOR, "[data-test='shopping-cart-link']").click()
+
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "cart_contents_container"))
+        )
+
+        driver.find_element(By.CSS_SELECTOR, "[data-test='checkout']").click()
+
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "first-name"))
+        )
+
+        driver.find_element(By.ID, "first-name").send_keys("Geovane")
+        driver.find_element(By.ID, "last-name").send_keys("Rocha")
+        driver.find_element(By.ID, "postal-code").send_keys("12345")
+
+        driver.find_element(By.CSS_SELECTOR, "[data-test='continue']").click()
+
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "[data-test='finish']"))
+        )
+
+        driver.find_element(By.CSS_SELECTOR, "[data-test='finish']").click()
+
+        mensagem = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "[data-test='complete-header']"))
+        )
+
+        assert mensagem.text == "Thank you for your order!"
+        print("✅ Teste passou — Checkout completo com sucesso!")
+
+    finally:
+        driver.quit()
