@@ -64,4 +64,33 @@ def test_filtro_nome_z_a():
 
     finally:
         driver.quit()
+        
+############################################################################
+
+def test_remover_produto_carrinho():
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    try:
+        login(driver)
+
+        # Adiciona produto ao carrinho
+        driver.find_element(By.CSS_SELECTOR, "[data-test='add-to-cart-sauce-labs-backpack']").click()
+
+        # Verifica se carrinho tem 1 item
+        carrinho = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "[data-test='shopping-cart-badge']"))
+        )
+        assert carrinho.text == "1"
+
+        # Remove o produto
+        driver.find_element(By.CSS_SELECTOR, "[data-test='remove-sauce-labs-backpack']").click()
+
+        # Verifica se o badge do carrinho sumiu
+        WebDriverWait(driver, 10).until(
+            EC.invisibility_of_element_located((By.CSS_SELECTOR, "[data-test='shopping-cart-badge']"))
+        )
+
+        print("✅ Teste passou — Produto removido do carrinho!")
+
+    finally:
+        driver.quit()
 
