@@ -30,6 +30,8 @@ def test_login_valido():
     
     # Fecha o navegador
     driver.quit()
+    
+###################################################################################
 
 def test_login_invalido():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -49,6 +51,8 @@ def test_login_invalido():
     print("✅ Teste passou — Mensagem de erro exibida corretamente!")
     
     driver.quit()
+
+####################################################################################
     
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -94,6 +98,8 @@ def test_adicionar_produto_carrinho():
 
     finally:
         driver.quit()
+
+###################################################################################
         
 def test_checkout_completo():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -142,6 +148,8 @@ def test_checkout_completo():
 
     finally:
         driver.quit()
+
+###################################################################################
         
 def test_logout():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
