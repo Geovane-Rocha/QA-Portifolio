@@ -1,0 +1,59 @@
+# BUG-007 — Imagens Incorretas nos Produtos
+
+## Descrição
+Todos os produtos estão exibindo a mesma imagem na página principal de produtos.
+
+A imagem correta só é apresentada ao acessar a página individual do produto.
+
+---
+
+## Ambiente
+- Site: SauceDemo
+- Navegador: Chrome
+- Sistema Operacional: Windows 10
+
+---
+
+## Pré-condição
+Usuário autenticado no sistema.
+
+---
+
+## Passos para Reproduzir
+1. Acessar a página de produtos.
+2. Observar as imagens exibidas nos produtos.
+3. Comparar as imagens entre os diferentes itens.
+
+---
+
+## Resultado Esperado
+Cada produto deve exibir sua respectiva imagem corretamente.
+
+---
+
+## Resultado Obtido
+Todos os produtos exibem a mesma imagem na página principal de produtos.
+
+---
+
+## Severidade
+Média
+
+---
+
+## Prioridade
+Média
+
+---
+
+## Impacto
+O problema pode causar confusão ao usuário durante a navegação e impactar negativamente a experiência de compra, podendo gerar desistência da aquisição devido à divergência entre imagem e descrição do produto.
+
+---
+
+## Evidências
+
+### Página de produtos
+![Evidência 1](evidencia-1.png)
+
+### Evidência adicional
