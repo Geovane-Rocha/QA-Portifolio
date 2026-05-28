@@ -18,7 +18,8 @@ Usuário autenticado no sistema.
 ---
 
 ## Passos para Reproduzir
-1. Acessar https://www.saucedemo.com/inventoryhtml                                                       2. Fazer login com usuário problem_user e senha secret_sauce 
+1. Acessar https://www.saucedemo.com/inventoryhtml           
+2. Fazer login com usuário problem_user e senha secret_sauce 
 3. Na página de produtos observar as imagens exibidas em cada produto
 4. Comparar as imagens entre os diferentes itens listados
 
@@ -56,3 +57,4 @@ e descrição do produto.
 ---
 
 ## Evidências
+
