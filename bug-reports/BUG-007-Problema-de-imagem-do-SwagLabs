@@ -1,9 +1,7 @@
-# BUG-007 — Imagens Incorretas nos Produtos
+# Bug Report — BUG-007
 
-## Descrição
-Todos os produtos estão exibindo a mesma imagem na página principal de produtos.
-
-A imagem correta só é apresentada ao acessar a página individual do produto.
+## Título
+Imagem de todos os produtos estão iguais, com nomes dos produtos corretos
 
 ---
 
@@ -20,39 +18,41 @@ Usuário autenticado no sistema.
 ---
 
 ## Passos para Reproduzir
-1. Acessar https://www.saucedemo.com/inventory.html 
-2. Fazer login com usuário problem_user e senha secret_sauce  
-3. Na página de produtos observar as imagens de cada produto
-4. Comparar as imagens entre os diferentes itens
+1. Acessar https://www.saucedemo.com/inventoryhtml                                                       2. Fazer login com usuário problem_user e senha secret_sauce 
+3. Na página de produtos observar as imagens exibidas em cada produto
+4. Comparar as imagens entre os diferentes itens listados
+
 ---
 
 ## Resultado Esperado
-Cada produto deve exibir sua respectiva imagem corretamente.
+Cada produto deve exibir sua própria imagem correspondente
+na página principal de produtos.
 
 ---
 
 ## Resultado Obtido
-Todos os produtos exibem a mesma imagem na página principal de produtos.
+Todos os produtos exibem a mesma imagem na página principal
+de produtos. A imagem correta só é apresentada ao acessar
+a página individual do produto.
 
 ---
 
 ## Severidade
-Média
+🟠 Média
 
 ---
 
 ## Prioridade
-Média
+🟠 Média
 
 ---
 
 ## Impacto
-O problema pode causar confusão ao usuário durante a navegação e impactar negativamente a experiência de compra, 
-podendo gerar desistência da aquisição devido à divergência entre imagem e descrição do produto.
+O problema pode causar confusão ao usuário durante a navegação
+e impactar negativamente a experiência de compra, podendo gerar
+desistência da aquisição devido à divergência entre imagem
+e descrição do produto.
 
 ---
 
 ## Evidências
-![Evidência 1](evidencia-1.png)
-
-
