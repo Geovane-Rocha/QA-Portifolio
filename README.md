@@ -28,6 +28,7 @@ Repositório com estudos e práticas em Quality Assurance.
 - ✅ Automação de Testes com Selenium e Pytest
 - 🔄 Expandindo cobertura de testes automatizados
 
+
 ## 🤖 Testes Automatizados
 
 | Teste | Cenário | Status |
@@ -37,6 +38,13 @@ Repositório com estudos e práticas em Quality Assurance.
 | test_adicionar_produto_carrinho | Adicionar produto ao carrinho | ✅ |
 | test_checkout_completo | Fluxo completo de compra | ✅ |
 | test_logout | Logout do sistema | ✅ |
+| test_filtro_preco_menor_maior | Filtro de menor para maior preço | ✅ |
+| test_filtro_nome_z_a | Filtro Z-A | ✅ |
+| test_remover_produto_carrinho | Remover produto do carrinho | ✅ |
+| test_usuario_bloqueado | Usuário bloqueado | ✅ |
+| test_detalhes_produto | Página de detalhes do produto | ✅ |
+
+📊 [Ver Relatório HTML dos Testes](https://htmlpreview.github.io/?https://github.com/Geovane-Rocha/QA-Portifolio/blob/main/Automacao/relatorio.html)
 
 ## 🛠️ Ferramentas utilizadas
 
