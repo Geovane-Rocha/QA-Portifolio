@@ -72,3 +72,41 @@ Principais: GET, POST, PUT, DELETE.
 
 **Status Code** — Código numérico que indica o resultado 
 de uma requisição. Ex: 200 OK, 201 Created, 404 Not Found.
+
+## A
+
+**ATS** (Applicant Tracking System) — Sistema de triagem automática 
+de currículos usado por empresas para filtrar candidatos por 
+palavras-chave antes de chegar ao recrutador humano.
+
+## B
+
+**Branch** — Ramificação do código que permite desenvolver 
+funcionalidades isoladas sem afetar a branch principal (main).
+
+## M
+
+**Merge** — Comando Git que une as alterações de uma branch 
+de volta para a branch principal.
+
+## P
+
+**Partição de Equivalência** — Técnica de teste que divide 
+os dados de entrada em grupos e testa um valor de cada grupo.
+
+**Prioridade** — Nível de urgência para correção de um bug, 
+definido pelo time de negócio.
+
+## A
+
+**Análise de Valor Limite** — Técnica de teste que verifica 
+os valores exatos nos extremos de cada partição, onde os 
+bugs mais aparecem.
+
+## S
+
+**Stash** — Comando Git que guarda alterações temporariamente 
+sem fazer commit, permitindo trocar de branch sem perder o trabalho.
+
+**Severidade** — Nível de impacto técnico que um bug causa 
+no sistema.

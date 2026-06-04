@@ -34,3 +34,40 @@ Para sair: Esc → :wq → Enter
 
 **Conflito de merge** — Acontece quando o GitHub tem alterações
 que não estão no computador. Solução: git pull antes de git push.
+
+## Comandos Avançados
+
+**git log --oneline** — Mostra histórico de commits de forma resumida.
+
+**git branch** — Lista todas as branches do repositório.
+
+**git branch nome** — Cria uma branch nova.
+
+**git checkout nome** — Entra em uma branch específica.
+
+**git checkout main** — Volta para a branch principal.
+
+**git merge nome** — Une as alterações de uma branch para a branch atual.
+
+**git stash** — Guarda alterações temporariamente sem commitar.
+
+**git stash pop** — Recupera as alterações guardadas no stash.
+
+## Fluxo profissional com branches
+
+1. git pull
+2. git branch feature/nome-da-funcionalidade
+3. git checkout feature/nome-da-funcionalidade
+4. Faz as alterações no VSCode
+5. git add .
+6. git commit -m "mensagem"
+7. git checkout main
+8. git merge feature/nome-da-funcionalidade
+9. git push
+
+## Aprendizados importantes
+
+- Sempre rodar git pull antes de começar a trabalhar
+- Branches isolam o trabalho sem afetar a main
+- git stash é útil quando precisa trocar de branch sem commitar
+- git log --oneline mostra o histórico de forma limpa

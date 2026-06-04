@@ -38,3 +38,42 @@ Analogia: o garçom que leva o pedido até a cozinha e traz o resultado.
 - A URL fica na barra superior, não no Body ← erro que cometi e aprendi
 - JSON é o formato padrão — o tipo deve estar como JSON no dropdown do raw
 - 500 pode indicar erro no formato do Body, não só erro do servidor
+
+## Testes Automáticos com Scripts
+
+O Postman permite escrever validações automáticas na aba **Scripts**.
+Isso elimina a necessidade de verificar manualmente cada resposta!
+
+### Validações mais usadas
+
+**Validar Status Code:**
+```javascript
+pm.test("Status code é 200", function() {
+    pm.response.to.have.status(200);
+});
+```
+
+**Validar se campo existe:**
+```javascript
+pm.test("Resposta tem nome", function() {
+    var json = pm.response.json();
+    pm.expect(json.name).to.exist;
+});
+```
+
+**Validar valor de um campo:**
+```javascript
+pm.test("ID é igual a 1", function() {
+    var json = pm.response.json();
+    pm.expect(json.id).to.equal(1);
+});
+```
+
+## Aprendizados importantes
+
+- A aba Scripts fica em Post-res no Postman
+- pm.test() define o nome do teste e a validação
+- pm.response.to.have.status() valida o status code
+- pm.response.json() converte a resposta para JSON
+- pm.expect() faz a validação do valor
+- Os resultados aparecem na aba Test Results
