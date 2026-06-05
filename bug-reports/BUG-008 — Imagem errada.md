@@ -35,3 +35,4 @@ Impacta negativamente o usuário pois passa imagem negativa
 do produto errado, podendo causar confusão e desistência da compra.
 
 ## Evidência
+<img width="1322" height="582" alt="Capturar" src="https://github.com/user-attachments/assets/3fac4f4e-781d-45b3-82fe-391952e75cfb" />
