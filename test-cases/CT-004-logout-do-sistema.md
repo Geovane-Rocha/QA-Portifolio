@@ -1,12 +1,15 @@
-Caso de Teste-CT-004
+## Caso de Teste-CT-004
 
-Título
+## Título
+
 Logout do sistema
 
-Pré-condição
+## Pré-condição
+
 Usuário deve estar logado na página do saucedemo.com
 
-Passos 
+## Passos 
+
 1. Acessar https://www.saucedemo.com
 
 2. Fazer login com usuário standard_users e senha secret_sauce
@@ -15,8 +18,10 @@ Passos
 
 4. Selecionar a opção "Logout"
 
-Resultado Esperado
+## Resultado Esperado
+
 Usuário é redirecionado para página de login do saucedemo.com
 
-Status 
+##Status
+
 ✅ Passou
