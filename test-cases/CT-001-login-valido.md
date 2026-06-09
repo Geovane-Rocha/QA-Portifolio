@@ -4,7 +4,7 @@
 Login com credenciais válidas
 
 ## Pré-condição
-Usuário deve estar deslogado e na página inicial do saucedemo.com
+Usuário deve estar deslogado e na página inicial do saucedemo.com 
 
 ## Passos
 1. Acessar https://www.saucedemo.com
