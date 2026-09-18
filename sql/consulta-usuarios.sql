@@ -36,3 +36,22 @@ ORDER BY idade DESC;
 SELECT nome, idade FROM usuarios
 WHERE idade >= 30
 ORDER BY idade DESC;
+
+-- Teste 10: consultar nome e email dos usuários com menos de 30 anos
+-- ordenando os nomes em ordem crescente
+
+SELECT nome, email FROM usuarios
+WHERE idade < 30
+ORDER BY nome ASC;
+
+
+-- Teste 11: consultar usuários específicos utilizando IN
+
+SELECT * FROM usuarios
+WHERE id IN (1, 3, 4);
+
+
+-- Teste 12: consultar nome e idade dos usuários entre 20 e 35 anos
+
+SELECT nome, idade FROM usuarios
+WHERE idade BETWEEN 20 AND 35;
