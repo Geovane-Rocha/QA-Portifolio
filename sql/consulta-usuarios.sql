@@ -30,3 +30,9 @@ WHERE nome LIKE 'G%';
 SELECT * FROM usuarios
 WHERE nome LIKE '%a%'
 ORDER BY idade DESC;
+
+-- Teste 9: consultar nome e idade dos usuários com 30 anos ou mais,
+-- ordenando do mais velho para o mais novo
+SELECT nome, idade FROM usuarios
+WHERE idade >= 30
+ORDER BY idade DESC;
