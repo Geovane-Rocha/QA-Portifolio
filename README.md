@@ -84,7 +84,8 @@ Portfólio               ████████░░  🔄
 Entrevistas QA          ███░░░░░░░  📚
 
 🎯 Objetivo
-Estou buscando minha primeira oportunidade como QA Júnior, onde eu possa aplicar meus conhecimentos em testes, contribuir com a qualidade do software e continuar evoluindo profissionalmente.
+Estou buscando minha primeira oportunidade como QA Júnior, onde eu possa aplicar meus conhecimentos em testes,
+contribuir com a qualidade do software e continuar evoluindo profissionalmente.
 
 <div align="center">
 🧪 Qualidade não é apenas encontrar bugs.
